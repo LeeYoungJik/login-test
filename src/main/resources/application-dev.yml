@@ -1,0 +1,25 @@
+spring:
+  application:
+        name: login
+
+  datasource:
+    url: jdbc:mariadb://127.0.0.1:3306/toyUser
+    driver-class-name: org.mariadb.jdbc.Driver
+    hikari:
+#      connection-timeout: 30000
+#      maximum-pool-size: 50
+#      max-lifetime: 18000000
+#      pool-name: HikariCP
+#      read-only: false
+#      connection-test-query: select 1 from dual
+      username: cafe
+      password: cafe2413
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port:  2700
+
